@@ -1,0 +1,429 @@
+ 
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
+
+/*html, body{
+  height: 100%;
+}*/
+
+body{
+  font-family: "Ubuntu", sans-serif;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navbar-brand{
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.navbar li{
+  text-transform: capitalize;
+}
+
+#splash{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin-top: 50px;
+  padding-top: 15%;
+  padding-bottom: 50px;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.5),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+  #splash h1{
+    font-size: 2em;
+  }
+
+  #splash a{
+    color: #fff;
+  }
+
+  #splash a:hover{
+    color: #e7e7e7;
+  }
+
+#portfolio{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/portfolio.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #portfolio h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+.thumbnail{
+  position: relative;
+}
+
+  .thumbnail img{
+    min-height: 250px;
+    min-width: 300px;
+  }
+
+.thumbnail-hover{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 99%;
+  width: 99%;
+  opacity: 0;
+  transition:2s;
+}
+
+    .thumbnail-hover:hover{
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    transition:.5s;
+    opacity: 1;
+    padding-top: 30%;
+    border-radius: 5px;
+  }
+
+  .thumbnail-hover i{
+    text-decoration: none;
+    color: white;
+  }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+#about{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #about h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #about p{
+    font-size: 1.5em;
+    text-align: justify;
+  }
+
+  #about img{
+    padding: 10px;
+    max-width: 180px;
+  }
+
+#white-bg{
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 20px;
+  margin-right: 10px;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6% 2%;
+}
+
+#contact{
+  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+  #contact h1{
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact h2{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.5),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  #contact address{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #contact .fa-stack{
+    color: #333;
+  }
+
+  #contact .fa-stack:hover .fa-stack-1x{
+    color: #333;
+    transition: 0.5s;
+  }
+
+  #contact .fa-stack:hover .fa-stack-2x{
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #contact a{
+    text-decoration: none;
+  }
+
+hr{
+  width: 25%;
+}
+
+index.html
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e9eaed;
+  font-family: arial, sans-serif;
+}
+
+.field-reactions:checked:focus ~ .text-desc, .field-reactions, [class*=reaction-], .text-desc {
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.field-reactions:checked ~ [class*=reaction-], .box:hover [class*=reaction-], .field-reactions:focus ~ .text-desc {
+  clip: auto;
+  overflow: visible;
+  opacity: 1;
+}
+
+.main-title {
+  background: #3a5795;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-desc {
+  font-weight: normal;
+  text-align: center;
+  transform: translateY(-50px);
+  white-space: nowrap;
+  font-size: 13px;
+  width: 100%;
+}
+
+[class*=reaction-] {
+  border: none;
+  background-image: url(http://deividmarques.github.io/facebook-reactions-css/assets/images/facebook-reactions.png);
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  z-index: 11;
+  top: -28;
+  transform-origin: 50% 100%;
+  transform: scale(0.1);
+  transition: all 0.3s;
+  outline: none;
+  will-change: transform;
+  opacity: 0;
+}
+
+.box {
+  position: absolute;
+  left: calc(50% - 290px);
+  top: calc(50% - -60px);
+  width: 300px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  visibility: hidden;
+}
+
+.field-reactions:focus ~ .label-reactions {
+  border-color: rgba(88, 144, 255, 0.3);
+}
+.field-reactions:checked:focus ~ .label-reactions {
+  border-color: transparent;
+}
+.label-reactions {
+  background: url(https://cdn4.iconfinder.com/data/icons/facebook-likes/100/1.png) no-repeat 0 0;
+  border: 2px dotted transparent;
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+  color: transparent;
+  cursor: pointer;
+}
+
+.toolbox {
+  background: #fff;
+  height: 52px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  border-radius: 40px;
+  top: -30px;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.legend-reaction {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  line-height: 20px;
+  max-width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 6px;
+  transition: opacity 50ms ease;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: -28px;
+  transform: translateX(-50%);
+}
+
+.box:hover [class*=reaction-] {
+  transform: scale(0.8) translateY(-40px);
+}
+.box:hover [class*=reaction-]:hover, .box:hover [class*=reaction-]:focus {
+  transition: all 0.2s ease-in;
+  transform: scale(1) translateY(-35px);
+}
+.box:hover [class*=reaction-]:hover .legend-reaction, .box:hover [class*=reaction-]:focus .legend-reaction {
+  opacity: 1;
+}
+.box:hover .toolbox {
+  opacity: 1;
+}
+.box:hover .toolbox {
+  visibility: visible;
+}
+.box:hover .reaction-love {
+  transition-delay: 0.06s;
+}
+.box:hover .reaction-haha {
+  transition-delay: 0.09s;
+}
+.box:hover .reaction-wow {
+  transition-delay: 0.12s;
+}
+.box:hover .reaction-sad {
+  transition-delay: 0.15s;
+}
+.box:hover .reaction-angry {
+  transition-delay: 0.18s;
+}
+
+.field-reactions:checked ~ [class*=reaction-] {
+  transform: scale(0.8) translateY(-40px);
+}
+.field-reactions:checked ~ [class*=reaction-]:hover, .field-reactions:checked ~ [class*=reaction-]:focus {
+  transition: all 0.2s ease-in;
+  transform: scale(1) translateY(-35px);
+}
+.field-reactions:checked ~ [class*=reaction-]:hover .legend-reaction, .field-reactions:checked ~ [class*=reaction-]:focus .legend-reaction {
+  opacity: 1;
+}
+.field-reactions:checked ~ .toolbox {
+  opacity: 1;
+}
+.field-reactions:checked ~ .toolbox,
+.field-reactions:checked ~ .overlay {
+  visibility: visible;
+}
+.field-reactions:checked ~ .reaction-love {
+  transition-delay: 0.03s;
+}
+.field-reactions:checked ~ .reaction-haha {
+  transition-delay: 0.09s;
+}
+.field-reactions:checked ~ .reaction-wow {
+  transition-delay: 0.12s;
+}
+.field-reactions:checked ~ .reaction-sad {
+  transition-delay: 0.15s;
+}
+.field-reactions:checked ~ .reaction-angry {
+  transition-delay: 0.18s;
+}
+
+.reaction-like {
+  left: 0;
+  background-position: 0 -144px;
+}
+
+.reaction-love {
+  background-position: -48px 0;
+  left: 50px;
+}
+
+.reaction-haha {
+  background-position: -96px 0;
+  left: 100px;
+}
+
+.reaction-wow {
+  background-position: -144px 0;
+  left: 150px;
+}
+
+.reaction-sad {
+  background-position: -192px 0;
+  left: 200px;
+}
+
+.reaction-angry {
+  background-position: -240px 0;
+  left: 250px;
+}
